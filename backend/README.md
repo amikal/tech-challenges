@@ -12,6 +12,25 @@ composer install
 php -S localhost:8080 -t web web/index.php
 
 #Go to http://localhost:8080, you will see "Status OK"
+
+#We will store data json files into MongoDB
+
+#Install MongoDB
+
+#On Linux
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+#Create MongoDB database iwd and collection surveys
+#launch mongo shell
+$ mongo
+>use iwddb
+switched to db iwddb
+>db.createCollection("surveys")
+>exit
+
+#Load by a shell script all json files in data dir (path is configurable in /bin/bash/import_data.sh)
+$ sudo chmod 755 bin/bash/import_data.sh
+$ sh bin/bash/import_data.sh
 ```
 
 ## Guidelines

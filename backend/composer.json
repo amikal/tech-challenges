@@ -6,7 +6,7 @@
     },
     "autoload": {
         "psr-4": {
-            "IWD\\JOBINTERVIEW\\": "src/"
+            "IWD\\Surveys\\": "src/IWD/Surveys"
         }
     }
 }
